@@ -6,11 +6,20 @@ if (navigator.geolocation) {
         fetch(`https://nominatim.openstreetmap.org/reverse?format=json&lat=${lat}&lon=${lon}&accept-language=ar`)
         .then(res => res.json())
         .then(data => {
+             document.querySelector(".icon").style.display ="none";
+
             document.querySelector(".weather").style.display = "block";
             document.querySelector(".day-buttons").style.display = "flex";
-
-             document.querySelector(".icon").style.display ="none";
-            const city = data.address.city || data.address.town || data.address.village || "غير معروفة";
+const city = 
+    data.address.city ||
+    data.address.town ||
+    data.address.village ||
+    data.address.hamlet ||
+    data.address.suburb ||
+    data.address.county ||
+    data.address.state_district ||
+    "غير معروفة";
+    console.log(data.address);
            document.getElementById("city").innerText =  ` ${city}`  ;
       });
 
