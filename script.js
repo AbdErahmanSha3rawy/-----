@@ -7,6 +7,8 @@ if (navigator.geolocation) {
         .then(res => res.json())
         .then(data => {
             document.querySelector(".weather").style.display = "block";
+            document.querySelector(".day-buttons").style.display = "flex";
+
              document.querySelector(".icon").style.display ="none";
             const city = data.address.city || data.address.town || data.address.village || "غير معروفة";
            document.getElementById("city").innerText =  ` ${city}`  ;
