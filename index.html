@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الطقس الان</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="imgs/icon.png" type="image/x-icon">
+</head>
+<body>
+
+    <div class="nav">
+        <img src="imgs/icon.png" alt="">
+        <h2 id="city"></h2>
+    </div>
+    <img src="imgs/icon.png" alt="" class="icon">
+<div class="weather"> 
+    <div class="contain firstline">
+<h3 id="day2">جاري التحميل ...</h3>
+
+<h3 id="day">جاري التحميل ...</h3>
+    </div>
+    
+    <div class="contain">
+<h3 id="temp">جاري التحميل ...</h3>
+<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMwAAADACAMAAAB/Pny7AAAAZlBMVEX///8AAAD39/f7+/vy8vLCwsKgoKDk5ORjY2Pn5+dmZmbs7OzR0dHd3d
+24uLjOzs6Pj4/X19cLCwuWlpYwMDA6OjolJSVeXl6rq6u
+BgYEVFRXIyMg/Pz9TU1MdHR1JSUlubm54eHgp8hq6AAAH40lEQVR
+4nO2d2ZayOhCFJYRJBEVQmRx4/5c8avfvUQyVSoGmei2+69bONqFS
+U8JiMTMzMzMzMzPzGVwRJ6tmlQRSuLbHMgIhk7I7O08UhyrNIvn3RM
+WrvHVU1KG/jv6UnihdKpX8cvab2PYQsYj0Akm5se08aXuYKKJqr9Nyk
+1N5tgeKoDkgpNwo8sj2WHWkO6SW6+SEme3RwqQFWsuVdm17vBCekRbH
+OTGem+ysH3+PwPaYh4i1JvmdHVcT7ZtrcZyN7VGrWasdGB0sF5rckLQ4F
+9sDV7E+0cTUDKdGVDQtjpPbHvo7wZYq5mB76O+UVC1Oy846C7xP1qdg59R
+IshanYBcM0FeZs09tD74PNor5E2LoWpyisT34HtEYMSvbo+/RjBDDzjSTH
+OZfjrYH36cbIYadOxPStWzZOZpHuhh2q2xBd2Ycds7MwjAr88TZ9tDfwWR
+klWwT20N/hyzGtz1yBVQxnbA9cgVEAxCyM8s3aKY5ZPjALIib5oXlvNDcmY
+prLTA318IuJHtgHAJ0jCvOiZGS+sD0afnBKDnT8l1hP+ATzXXHvjALdjE8c
+9pwNWL/g42b6w23iF8B1gJUf0DLQuC0HP+CloWLS2nac8bEOi3L1MM9sKhk
+s63oJcofbv2pQ8TpmIdm//lhq4h6prYodYs9RkQBVvoxpMLQ7ho4KBR643y0EVYG6h1wA+/ca60YG9n+wQ6YA7hMAp09O1rY+rPhxX+GDIGrW2f+973+AIqAz1ApZQ1nAk/fT11qmkYOwK4n4baGy/edZU/Tm9ABC78EP/v9VRZrO5PS4TEloAn4ekSmfYivAKsFSmsckTumK+SVKU4OxHotUCoiAbwAje/vimhdVse2/vf3pzbMvWCMKFSIBfzEgPU4NoNqZJyVF3W2el81MTFqcFGdSUBFJYEeuYNSTpx5cIt6XTUkO6j3SO4AjzJsnav+pMpV2tXgR+4sU0JqCpmVOA1vNgFc2zi//A5JWWGrB0tjW+giv9kJhzYbUWp+59p/eM7NxqTfZrsxDFKRq8wZNE0y1z5029/sjNeZ9toezJxufPvrVqlG6LX8qvFCQkV3Z7TUTCpGqrQksufM9w60qmFd4rUIo1/r3YH2sB8lt6YauESZ4e/Vy00mIxob0KDDCJ0lemP/fHBMEwBMxBm74WAe3/53X72n30/jTeEoKqSz1lG+/Oz/6EFmNMeDXGjE4dSHvFzHq2mHPAyy12ZEm1XbfWtiHAfXBT1CzABLvyx9dBkKyQ6jRUwtZpnFwnVFnE0sBxOySvPTbyD/u5SIzK0JFUJMPK2Yl+rFpGoKhHUOJhWzfEmSiylX2h7R1D3tzPT+4ZSWu0aUrOSUBiDsOdXRiF7hNzq9mElNc94rxQhCp9AgmObhKcX0c7GY7CKaMyL5NOVK+KiYFpEOmNKH/+gy2yGcTeN4BuCjBmCHSG2YRpogHzTNqBN37pRiXjdNOal7hjo+SDjOP8zn3BmcGHR6BcXHHE3UM7NY0HNAKj4VAiDFTJ1g+UhwdhWDOj6IKZxNQ5gv6Wk2zKa5MMk2jyRbBE1ZEf10jDtzJaKfUDJiefd2ZJZ2lE9jT6mlE496gEcYH2eE5xR7G8J3kqybpx1VBMbbGyYJcAeqfk/F8TVh7HpmrscW3xxJuKLo3z9B/l39tk3Encn/ORmU0Fa0udkfPORGryoZmSTtC5PGgBUh1VqE3q0jClMGVDcE+fjDBGZHbpPOUErb/bh+CDXbftj2UIOeG8OD3aI0KAVvD/kj8hO+rnSeD2bw0Bu2cQ/ueoO0MG2VvjgXKfwznIarkgK5umtTLdevbhByiirN+k+jZhdcAj1RODHoXeYZmZWglW43TaLq1JDgfY3QVSa4hUbsjnTjpFQPrK28JB5suQblXIY7tWNMRmXMzU6uyNJNeC5+bM1+d7zkXiZ0PW1AYgmKeTFdEZP04LpXsH8bQe4WUC9G5O6XX2/BX0OBFxT06jNS3z8bAS8XwE904W7i5yzJt9DEEUcg6o3hjx6+3+gNdmo6cDsPGN20Fi5C0oWrYFcwoGZn4SI0qQsdC/Apjob2zsKzcLg702jRtY1J9cy2Ng55iU4rptOEV6qlZufkbaDV4mx1Rsnth7vYkwRTg8khIKL4yH/svMXG1vUBqK5TZAtc5qVpurJ3NQ0uXV1zvDvnDYmsXbK/3+CKwAby3C+eWNza57EF64vtoWqJc3Ty62R7rDqizuD6aeYWID2blER5Xjn1S7A06+/gbAGMyzpMb9BfkBoIlrbHPADpDn1+t2feiTqCFqewPWwl5iXJO1uOV4JRXgZyh6EYl1ydZrhr0vsG+ImR9E5IfmJGtNuxEzPmmnZ2BmDExBAqk59FjugcRJ1P+ia6+gMEu/e0jOm2xZy0+CpjDtxwu3Q6GHOYmds17Zq7mWC4XXTYjBDDLjszZmZIPSOfZIwYbo/MKAPAzjMbYZo37DyzEYfUGL4TlOzOXLgZ5iuSehSK3YvNbhATANBVfPagvXZuz3JiqC9q5WfK7lBud+B7jT6qrfIF3IExOwSGPg2/FwE+Y3aqY29wEZYNkgt+7yyYa7kVmbEe55GpUX6hqTB15n3Fuir7QHp6OWHKz+8fQK59cM8JKVdh2sON1n6onp82X7F0x0BcGSdp9XoT47krM/lnFpgCV8goWTWrJJ7iquKZmZmZmZmZGSX/ARxddWUp/O2wAAAAAElFTkSuQmCC" alt="">
+<h3 id="windspeed">جاري التحميل ...</h3>
+
+    </div>
+
+<hr>
+    <div class="contain">
+
+<h3 id="Humidity">جاري التحميل ...</h3>
+
+<h3 id="winddirection">جاري التحميل ...</h3>
+    </div>
+<hr>
+<h3 id="weathercode">جاري التحميل ...</h3>
+<hr>
+</div>
+
+
+<div class="day-buttons" id="day-buttons">
+
+</div>
+
+<div class="forecast-details" id="forecast-details">
+    <span id="forecast-day"></span>
+    <br>
+    <span id="min-temp"></span>
+    <br>
+    <span id="max-temp"></span>
+
+    <br>
+    <span id="forecast-weather"></span>
+</div>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

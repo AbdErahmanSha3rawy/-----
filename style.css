@@ -1,0 +1,199 @@
+body{
+     margin: 0;
+    height: auto;        
+    padding-bottom: 20px;
+    background: #f0f0f0;
+    background-image: url("https://petro-news.com/wp-content/uploads/2021/02/%D8%B7%D9%82%D8%B3-%D9%85%D8%B5%D8%B1-%D8%A7%D9%84%D9%8A%D9%88%D9%85.png");
+     background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 30px 5px 20px;
+    border-bottom: rgb(206, 200, 200) 2px solid;
+    align-items: center;
+    background-color: #6e82f552;
+}
+.nav img{
+    width: 60px;
+    height: 60px;
+background-color: rgba(231, 229, 226, 0.233);
+border-radius: 50%;
+}
+#city{
+    background-color: rgb(237, 245, 242);
+    width: 100px;
+    text-align: center;
+    border-radius: 10px;
+}
+.icon{
+    display: flex;
+    width: 100px;
+    height: 100px;
+    justify-self: center;
+    margin-top: 170px;
+    border-radius: 50%;
+    border: 2px rgb(238, 177, 240) solid;
+animation: icon 1s linear infinite;
+}
+@keyframes icon {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+.weather{
+    display: none;
+    width: 50%;
+    text-align: right;
+    display: flex-block;
+justify-self: center;
+margin-top: 50px;
+padding: 10px;
+background-color: rgba(192, 202, 235, 0.425);
+border-radius: 10px;
+}
+.contain{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+.contain img{
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-self: center;
+    border-radius: 50%;
+animation: icon 1s linear infinite;
+    margin-left: 150px;
+}
+
+
+.firstline{
+    background-color: rgba(96, 124, 247, 0.548);
+    border-radius: 10px;
+}
+
+.weather-today {
+    width: 400px;
+    background: rgba(255,255,255,0.8);
+    border-radius: 15px;
+    padding: 20px;
+    margin-bottom: 20px;
+    text-align: right;
+}
+
+.weather-today span {
+    display: block;
+    margin: 5px 0;
+}
+
+.day-buttons {
+    display: flex;
+    width: 50%;
+    gap: 10px;
+    margin-bottom: 20px;
+    justify-self: center;
+    justify-content: center;
+    direction: rtl;
+    flex-wrap: wrap;
+}
+
+.day-buttons button {
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: none;
+    background: #0529f3;
+    cursor: pointer;
+    transition: 0.2s;
+    color: #d0e7ff;
+    font-size: 20px;
+}
+
+.day-buttons button:hover {
+    background: #d0e7ff;
+    color: black;
+}
+
+.forecast-details {
+    
+    width: 50%;
+    background: rgba(255,255,255,0.8);
+    border-radius: 15px;
+    padding: 20px;
+    display: none; 
+    justify-self: center;
+    text-align: right;
+    font-size: 25px;
+}
+
+
+@media (max-width: 768px) {
+
+.weather,.forecast-details{
+    width: 80%;
+}
+.day-buttons{
+    width: 80%;
+    gap: 5px;
+    
+}
+.contain img{
+    margin-left: 10px;
+    margin-bottom: -45px;
+}
+
+.contain{
+    display: block;
+}
+.firstline{
+    display: flex;
+}
+button{
+    width: 30%;
+
+
+}
+.icon{
+       width: 50px;
+    height: 50px;
+    background-color: rgb(223, 215, 215);
+}
+
+
+}
+
+@media (min-width: 769px) and (max-width: 1000px) {
+
+.weather,.forecast-details{
+    width: 80%;
+}
+.day-buttons{
+    width: 80%;
+    gap: 5px;
+    
+}
+.contain img{
+     margin-left: 150px;
+    
+}
+
+.icon{
+       width: 50px;
+    height: 50px;
+    background-color: rgb(223, 215, 215);
+}
+
+.firstline{
+    display: flex;
+}
+button{
+    width: 30%;
+
+
+}
+
+
+
+}
