@@ -90,7 +90,7 @@ animation: icon 1s linear infinite;
 }
 
 .day-buttons {
-    display: flex;
+    display: none;
     width: 50%;
     gap: 10px;
     margin-bottom: 20px;
