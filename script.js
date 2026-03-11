@@ -143,7 +143,7 @@ let weather = {
 
             const btn = document.createElement("button");
             btn.innerText = dayName;
-
+     
             btn.addEventListener("click", () => {
                 document.getElementById("forecast-day").innerText = dayName;
                 document.getElementById("min-temp").innerText = `°C   الصغري:      ${minTemps[i]} `;
@@ -151,10 +151,17 @@ let weather = {
               code2=codes[i];
                 document.getElementById("forecast-weather").innerText = `حالة الطقس: ( ${weather[code2].icon + " " + weather[code2].text} ) `; // لاحقًا ممكن نحول الكود لأيقونة + نص عربي
                 forecastDetails.style.display = "block";
+                scrollToBottom();
+
             });
 
             buttonsContainer.appendChild(btn);
-        
+        function scrollToBottom() {
+    window.scrollTo({
+        top: document.body.scrollHeight,
+        behavior: "smooth"
+    });
+}
 }      
         });
 
