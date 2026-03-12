@@ -18,7 +18,7 @@ const city =
     data.address.suburb ||
     data.address.county ||
     data.address.state_district ||
-    "غير معروفة";
+    "🌐";
     console.log(data.address);
            document.getElementById("city").innerText =  ` ${city}`  ;
       });

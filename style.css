@@ -3,11 +3,8 @@ body{
     height: auto;        
     padding-bottom: 20px;
     background: #f0f0f0;
-    background-image: url("data:image/jpeg;base64,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");
-     background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
+    background-image: linear-gradient(150deg,#3306fc,#d697fa,#7067f5 );
+    
 }
 .nav{
     display: flex;
@@ -25,7 +22,7 @@ border-radius: 50%;
 }
 #city{
     background-color: rgb(237, 245, 242);
-    width: 100px;
+    width: auto;
     text-align: center;
     border-radius: 10px;
 }
@@ -119,7 +116,7 @@ animation: icon 1s linear infinite;
 .forecast-details {
     
     width: 50%;
-    background: rgba(255,255,255,0.8);
+    background-image: linear-gradient(150deg,#5f3ef0,#d697fa,#a39df3 );
     border-radius: 15px;
     padding: 20px;
     display: none; 
